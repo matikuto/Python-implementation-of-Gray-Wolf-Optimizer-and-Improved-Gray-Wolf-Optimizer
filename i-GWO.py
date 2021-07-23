@@ -91,10 +91,6 @@ class i_GWO():
                     closer_neighbors = sorted(closer_neighbors)
                     neighborhood.append(closer_neighbors[0][1])
                 
-                # if empty list add same current wolf, not sure
-                # if len(neighborhood) == 0:
-                #     neighborhood.append(current_wolf)
-                
                 # Compute eq. 12 compute new candidate using neighborhood
                 X_DLH = [0.0 for i in range(self.vector_size)]
                 for m in range(self.vector_size):
